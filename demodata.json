@@ -1,0 +1,1584 @@
+{
+  "DropDatabase": true,
+  "Configuration": {
+    "Sync": {
+      "SecondsOverLastSync": 600
+    },
+    "Parameters": {
+      "CAR": false,
+      "CARLifeTime": 86400000,
+      "SAD": false,
+      "CPT": false,
+      "PRE": true,
+      "PRE_REASON_MULTIPLE_SELECTION": false,
+      "PRE_BEHAVIOR_MULTIPLE_SELECTION": false,
+      "DisplayMode": "Oncology",
+      "StartAdministrationAuthenticationEnabled": false,
+      "StopAdministrationAuthenticationEnabled": false,
+      "ReceptionAuthenticationEnabled": false,
+      "CloseShortAdministration": true,
+      "CodanEnabled": false,
+      "SamplingParameters": {
+        "Enabled": false,
+        "TsnEnabled": false,
+        "AssociationValidity": 259200000,
+        "TrnPattern": "^[0-9]{6}$",
+        "TsnPattern": "^[0-9]{5}$",
+        "StnPattern": "^[0-9]{4}$",
+        "PatientIdPattern": "^[0-9]{4}$",
+        "PatientCheckMode": 0,
+        "TubeCheckMode": 1,
+        "MaxTubes": 5
+      }
+    },
+    "Status": [
+      {
+        "Value": 0,
+        "Label": "En cours de lib\u00E9ration",
+        "Allowed": false
+      },
+      {
+        "Value": 1,
+        "Label": "Lib\u00E9r\u00E9",
+        "Allowed": false
+      },
+      {
+        "Value": 2,
+        "Label": "A d\u00E9truire",
+        "Allowed": false
+      },
+      {
+        "Value": 3,
+        "Label": "D\u00E9truit",
+        "Allowed": false
+      },
+      {
+        "Value": 4,
+        "Label": "Dispens\u00E9",
+        "Allowed": true
+      },
+      {
+        "Value": 5,
+        "Label": "A retourner",
+        "Allowed": false
+      },
+      {
+        "Value": 6,
+        "Label": "Retourn\u00E9",
+        "Allowed": false
+      },
+      {
+        "Value": 7,
+        "Label": "Enlev\u00E9",
+        "Allowed": true
+      },
+      {
+        "Value": 8,
+        "Label": "Livr\u00E9",
+        "Allowed": true
+      },
+      {
+        "Value": 9,
+        "Label": "R\u00E9ceptionn\u00E9",
+        "Allowed": true
+      },
+      {
+        "Value": 10,
+        "Label": "Administration en cours",
+        "Allowed": false
+      },
+      {
+        "Value": 11,
+        "Label": "Administr\u00E9",
+        "Allowed": false
+      },
+      {
+        "Value": 12,
+        "Label": "Non conforme",
+        "Allowed": false
+      },
+      {
+        "Value": 13,
+        "Label": "Non administr\u00E9",
+        "Allowed": false
+      },
+      {
+        "Value": 14,
+        "Label": "Administration en pause",
+        "Allowed": false
+      }
+    ],
+    "LifetimeParameters": {
+      "DoneHours": 24,
+      "OnGoingHours": 48,
+      "PendingHours": 72,
+      "PackingHours": 72,
+      "NotificationHours": 72
+    },
+    "ProtocolParameters": {
+      "CheckOrderProtocol": 0
+    },
+    "SessionParameters": {
+      "Timeout": 300000
+    },
+    "ControlCriteria": [
+      {
+        "Code": "Name",
+        "Label": "Name",
+        "Deleted": false
+      },
+      {
+        "Code": "FirstName",
+        "Label": "FirstName",
+        "Deleted": false
+      },
+      {
+        "Code": "Group",
+        "Label": "Group",
+        "Deleted": false
+      },
+      {
+        "Code": "Birth",
+        "Label": "Birth",
+        "Deleted": false
+      },
+      {
+        "Code": "RAI",
+        "Label": "RAI",
+        "Deleted": false
+      },
+      {
+        "Code": "CGR",
+        "Label": "CGR",
+        "Deleted": false
+      },
+      {
+        "Code": "Label",
+        "Label": "Label",
+        "Deleted": false
+      },
+      {
+        "Code": "Integrity",
+        "Label": "Integrity",
+        "Deleted": false
+      },
+      {
+        "Code": "Quality",
+        "Label": "Quality",
+        "Deleted": false
+      },
+      {
+        "Code": "Conformity",
+        "Label": "Conformity",
+        "Deleted": false
+      }
+    ],
+    "Date": {
+      "TransformExpirationDateAccordingToTimezone": true
+    }
+  },
+  "Service": {
+    "Id": 10,
+    "Code": "CAN",
+    "Label": "Cancerologie"
+  },
+  "Users": [
+    {
+      "Username": "UN1",
+      "Password": "81dc9bdb52d04dc20036dbd8313ed055",
+      "FirstName": "Demo",
+      "LastName": "Google",
+      "BadgeUid": "null",
+      "Deleted": false
+    }
+  ],
+  "Reasons": [
+    {
+      "Code": "ALL",
+      "Label": "R\u00E9action allergique",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "ERP",
+      "Label": "Erreur de pr\u00E9paration",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "ERR",
+      "Label": "Erreur de patient",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "EXT",
+      "Label": "Extravasation",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "FUI",
+      "Label": "Poche perc\u00E9e",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "NF",
+      "Label": "Pr\u00E9paration non r\u00E9alis\u00E9e",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "PAC",
+      "Label": "Chambre implantable inutilisable",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "PER",
+      "Label": "Pr\u00E9paration p\u00E9rim\u00E9e",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "REF",
+      "Label": "Refus du patient",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "ZZZ",
+      "Label": "Z-Autre",
+      "Deleted": false,
+      "Id": 0
+    }
+  ],
+  "Behaviors": [
+    {
+      "Code": "ATTE",
+      "Label": "Perfusion mise en attente",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "CONT",
+      "Label": "Arr\u00EAt puis reprise de la perfusion",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "STOP",
+      "Label": "Arr\u00EAt de la perfusion (retour prep \u00E0 la pharmacie)",
+      "Deleted": false,
+      "Id": 0
+    },
+    {
+      "Code": "ZZZZ",
+      "Label": "Autre",
+      "Deleted": false,
+      "Id": 0
+    }
+  ],
+  "PreMedications": [
+    {
+      "Id": 120606,
+      "ReferenceId": 120606,
+      "HeaderName": "H0001",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "PRIMPERAN 10 mg, cpr",
+      "Dose": 10,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 10,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": {
+        "Date": "__CURRENTDATE__",
+        "User": {
+          "Username": "UN1",
+          "Password": "81dc9bdb52d04dc20036dbd8313ed055",
+          "FirstName": "Demo",
+          "LastName": "Google",
+          "BadgeUid": "null",
+          "Deleted": false
+        },
+        "PatientScanned": false,
+        "UserDoubleCheck": null,
+        "IdentityPatientIgnored": null
+      },
+      "AdministrationEndStep": {
+        "Date": "__CURRENTDATE__",
+        "User": {
+          "Username": "UN1",
+          "Password": "81dc9bdb52d04dc20036dbd8313ed055",
+          "FirstName": "Demo",
+          "LastName": "Google",
+          "BadgeUid": "null",
+          "Deleted": false
+        },
+        "Type": 3,
+        "Reasons": [
+          {
+            "Code": "ZZZ",
+            "Label": "Reason",
+            "Deleted": false,
+            "Id": 1
+          }
+        ],
+        "Behaviors": [
+          {
+            "Code": "ZZZZ",
+            "Label": "Behavior",
+            "Deleted": false,
+            "Id": 1
+          }
+        ],
+        "EndedAtHome": false,
+        "UserDoubleCheck": null
+      },
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120607,
+      "ReferenceId": 120607,
+      "HeaderName": "H0001",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120608,
+      "ReferenceId": 120608,
+      "HeaderName": "H0001",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120609,
+      "ReferenceId": 120609,
+      "HeaderName": "H0001",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 40,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 40,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121855,
+      "ReferenceId": 121855,
+      "HeaderName": "H0002",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121856,
+      "ReferenceId": 121856,
+      "HeaderName": "H0002",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121857,
+      "ReferenceId": 121857,
+      "HeaderName": "H0002",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 40,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 40,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121001,
+      "ReferenceId": 121001,
+      "HeaderName": "H0003",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121002,
+      "ReferenceId": 121002,
+      "HeaderName": "H0003",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 80,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 80,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121003,
+      "ReferenceId": 121003,
+      "HeaderName": "H0003",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121004,
+      "ReferenceId": 121004,
+      "HeaderName": "H0003",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "PRIMPERAN 10 mg/2 mL, sol inj, amp",
+      "Dose": 20,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 20,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121005,
+      "ReferenceId": 121005,
+      "HeaderName": "H0003",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "ONDANSETRON 8 mg/4 mL sol inj, am",
+      "Dose": 8,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 8,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120635,
+      "ReferenceId": 120635,
+      "HeaderName": "H0004",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120636,
+      "ReferenceId": 120636,
+      "HeaderName": "H0004",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120637,
+      "ReferenceId": 120637,
+      "HeaderName": "H0004",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 40,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 40,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 119166,
+      "ReferenceId": 119166,
+      "HeaderName": "H0005",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "5-FLUOROURACILE",
+      "Dose": 0,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 400,
+      "ProtocolDoseUnit": "mg/m\u00B2",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 119169,
+      "ReferenceId": 119169,
+      "HeaderName": "H0005",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "ONDANSETRON 8 mg/4 mL sol inj, am",
+      "Dose": 8,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 8,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 119170,
+      "ReferenceId": 119170,
+      "HeaderName": "H0005",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 60,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 60,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 119171,
+      "ReferenceId": 119171,
+      "HeaderName": "H0005",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "ATROPINE SULFATE 0.50 mg/1 ml",
+      "Dose": 0.25,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 0.25,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121882,
+      "ReferenceId": 121882,
+      "HeaderName": "H0005",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "VENOFER 100 mg/5 mL, sol inj pr perf, am",
+      "Dose": 200,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 200,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121864,
+      "ReferenceId": 121864,
+      "HeaderName": "H0006",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121865,
+      "ReferenceId": 121865,
+      "HeaderName": "H0006",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 121866,
+      "ReferenceId": 121866,
+      "HeaderName": "H0006",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 40,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 40,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120427,
+      "ReferenceId": 120427,
+      "HeaderName": "H0007",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "ONDANSETRON 8 mg/4 mL sol inj, am",
+      "Dose": 8,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 8,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120428,
+      "ReferenceId": 120428,
+      "HeaderName": "H0007",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "EMEND 125 mg, g\u00E9lule",
+      "Dose": 125,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 125,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120429,
+      "ReferenceId": 120429,
+      "HeaderName": "H0007",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 120 mg MYLAN, pdr pr sol inj",
+      "Dose": 80,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 80,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120430,
+      "ReferenceId": 120430,
+      "HeaderName": "H0007",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "BIONOLYTE G5, poche ss PVC 1 L FREEFLEX",
+      "Dose": 1000,
+      "DoseUnit": "mL",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 1000,
+      "ProtocolDoseUnit": "mL",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120431,
+      "ReferenceId": 120431,
+      "HeaderName": "H0007",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "BIONOLYTE G5, poche ss PVC 500 mL FREEFLEX",
+      "Dose": 500,
+      "DoseUnit": "mL",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 500,
+      "ProtocolDoseUnit": "mL",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120942,
+      "ReferenceId": 120942,
+      "HeaderName": "H0008",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120943,
+      "ReferenceId": 120943,
+      "HeaderName": "H0008",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 120944,
+      "ReferenceId": 120944,
+      "HeaderName": "H0008",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 40,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 40,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 118803,
+      "ReferenceId": 118803,
+      "HeaderName": "H0009",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": true,
+      "Label": "METHYLPREDNISOLONE 40 mg pdr",
+      "Dose": 40,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 40,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": "__CURRENTDATE__"
+    },
+    {
+      "Id": 117692,
+      "ReferenceId": 117692,
+      "HeaderName": "H0011",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "ONDANSETRON 8 mg/4 mL sol inj, am",
+      "Dose": 8,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 8,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 117693,
+      "ReferenceId": 117693,
+      "HeaderName": "H0011",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "EMEND 125 mg, g\u00E9lule",
+      "Dose": 125,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 125,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 117694,
+      "ReferenceId": 117694,
+      "HeaderName": "H0011",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "POLARAMINE 5 mg/1 mL, sol inj, amp",
+      "Dose": 5,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 5,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 117695,
+      "ReferenceId": 117695,
+      "HeaderName": "H0011",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "AZANTAC 50 mg/2 mL, sol inj, amp",
+      "Dose": 50,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 50,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    },
+    {
+      "Id": 117696,
+      "ReferenceId": 117696,
+      "HeaderName": "H0011",
+      "PlannedAdministrationDate": "__CURRENTDATE__",
+      "Selected": false,
+      "Label": "METHYLPREDNISOLONE 120 mg MYLAN, pdr pr sol inj",
+      "Dose": 100,
+      "DoseUnit": "mg",
+      "Diluent": null,
+      "Volume": 0,
+      "VolumeUnit": "ml",
+      "ProtocolDose": 100,
+      "ProtocolDoseUnit": "mg",
+      "ProductComment": null,
+      "StorageTemperatureType": null,
+      "AdministrationStartStep": null,
+      "AdministrationEndStep": null,
+      "AdministrationDate": null
+    }
+  ],
+  "Administrations": [
+    {
+      "Preparation": {
+        "Id": 121883,
+        "ReferenceId": 121883,
+        "HeaderName": "H0001",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC22C0",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158756\u0022,\u0022Protocol\u0022:\u0022TAXOL hebdo\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022PACLITAXEL\u0022,\u0022Dose\u0022:114.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:15,\u0022CycleNumber\u0022:4,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -  250 ml\u0022,\u0022Volume\u0022:269.00,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:80.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1908",
+          "FirstName": "Nobel",
+          "LastName": "LIPPMANN",
+          "BirthName": "LIPPMANN",
+          "DateOfBirth": "1950-07-02T22:00:00Z",
+          "Sex": 1
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121884,
+        "ReferenceId": 121884,
+        "HeaderName": "H0002",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC235E",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158757\u0022,\u0022Protocol\u0022:\u0022TAXOL hebdo sein adjuvant\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022PACLITAXEL\u0022,\u0022Dose\u0022:159.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:\u0022E0165C010ECC22C0\u0022,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:2,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -  250 ml\u0022,\u0022Volume\u0022:276.50,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:80.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1908",
+          "FirstName": "Nobel",
+          "LastName": "LIPPMANN",
+          "BirthName": "LIPPMANN",
+          "DateOfBirth": "1950-07-02T22:00:00Z",
+          "Sex": 1
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121885,
+        "ReferenceId": 121885,
+        "HeaderName": "H0003",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC23CE",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158761\u0022,\u0022Protocol\u0022:\u0022JEVTANA (Cabazitaxel)\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022CABAZITAXEL\u0022,\u0022Dose\u0022:40.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:1,\u0022Diluent\u0022:\u0022GLUCOSE 5% -  250 ml\u0022,\u0022Volume\u0022:254.00,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:25.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:1}",
+        "Patient": {
+          "FileNumber": "1910",
+          "FirstName": "Leon",
+          "LastName": "BERNARD",
+          "BirthName": "BERNARD",
+          "DateOfBirth": "1951-03-06T23:00:00Z",
+          "Sex": 1
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121886,
+        "ReferenceId": 121886,
+        "HeaderName": "H0004",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC22B0",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158758\u0022,\u0022Protocol\u0022:\u0022TAXOL hebdo sein adjuvant\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022PACLITAXEL\u0022,\u0022Dose\u0022:159.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:2,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -  250 ml\u0022,\u0022Volume\u0022:276.50,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:80.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1911",
+          "FirstName": "Severine",
+          "LastName": "GOBE",
+          "BirthName": "GOBE",
+          "DateOfBirth": "1958-04-10T22:00:00Z",
+          "Sex": 2
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121887,
+        "ReferenceId": 121887,
+        "HeaderName": "H0005",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC249D",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158762\u0022,\u0022Protocol\u0022:\u00225-FU FOLINATE IRINOTECAN = FOLFIRI\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022LEVOFOLINATE DE CALCIUM\u0022,\u0022Dose\u0022:295.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:2,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:2,\u0022Diluent\u0022:\u0022GLUCOSE 5% -  250 ml\u0022,\u0022Volume\u0022:279.50,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:200.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1912",
+          "FirstName": "Jeanne",
+          "LastName": "MAUBERT",
+          "BirthName": "MAUBERT",
+          "DateOfBirth": "1950-07-18T22:00:00Z",
+          "Sex": 2
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121888,
+        "ReferenceId": 121888,
+        "HeaderName": "H0006",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC23FE",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158759\u0022,\u0022Protocol\u0022:\u0022TAXOL hebdo sein adjuvant\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022PACLITAXEL\u0022,\u0022Dose\u0022:126.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:3,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -  250 ml\u0022,\u0022Volume\u0022:271.00,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:80.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1913",
+          "FirstName": "Paul",
+          "LastName": "HALLY",
+          "BirthName": "HALLY",
+          "DateOfBirth": "1964-07-02T22:00:00Z",
+          "Sex": 1
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121889,
+        "ReferenceId": 121889,
+        "HeaderName": "H0007",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC2938",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158766\u0022,\u0022Protocol\u0022:\u0022GEMZAR CISPLATINE = GEMCIS\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022CISPLATINE\u0022,\u0022Dose\u0022:31.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003C1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:8,\u0022CycleNumber\u0022:8,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -   50 ml\u0022,\u0022Volume\u0022:81.00,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:25.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1914",
+          "FirstName": "Emile",
+          "LastName": "VAILLANT",
+          "BirthName": "VAILLANT",
+          "DateOfBirth": "1941-12-27T23:00:00Z",
+          "Sex": 1
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121890,
+        "ReferenceId": 121890,
+        "HeaderName": "H0008",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC2984",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158760\u0022,\u0022Protocol\u0022:\u0022TAXOL hebdo sein adjuvant\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022PACLITAXEL\u0022,\u0022Dose\u0022:126.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:1,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:21,\u0022CycleNumber\u0022:3,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -  250 ml\u0022,\u0022Volume\u0022:271.00,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:80.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1915",
+          "FirstName": "Louise",
+          "LastName": "MOURET",
+          "BirthName": "MOURET",
+          "DateOfBirth": "1969-03-05T23:00:00Z",
+          "Sex": 2
+        },
+        "Status": 9,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121895,
+        "ReferenceId": 121895,
+        "HeaderName": "H0009",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC27A5",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158769\u0022,\u0022Protocol\u0022:\u00225-FU FOLINATE = LV5FU2 simplifi\u00E9\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u0022LEVOFOLINATE DE CALCIUM\u0022,\u0022Dose\u0022:385.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:2,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:7,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -  250 ml\u0022,\u0022Volume\u0022:288.50,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:200.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1920",
+          "FirstName": "Thierry",
+          "LastName": "BONNIN",
+          "BirthName": "BONNIN",
+          "DateOfBirth": "1947-10-08T22:00:00Z",
+          "Sex": 1
+        },
+        "Status": 10,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": {
+        "Date": "__CURRENTDATE__",
+        "User": {
+          "Username": "UN1",
+          "Password": "81dc9bdb52d04dc20036dbd8313ed055",
+          "FirstName": "Demo",
+          "LastName": "Google",
+          "BadgeUid": "null",
+          "Deleted": false
+        },
+        "PatientScanned": true,
+        "UserDoubleCheck": null,
+        "IdentityPatientIgnored": null
+      },
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121897,
+        "ReferenceId": 121897,
+        "HeaderName": "H0010",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC2658",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158770\u0022,\u0022Protocol\u0022:\u00225-FU FOLINATE = LV5FU2 simplifi\u00E9\u0022,\u0022ProtocolComment\u0022:\u0022\u0022,\u0022DciLabel\u0022:\u00225-FLUOROURACILE\u0022,\u0022Dose\u0022:775.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:10,\u0022AdministrationDurationUnit\u0022:\u0022M\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003C1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:\u0022E0165C0112784E71\u0022,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:7,\u0022Diluent\u0022:\u0022SODIUM CHLORURE 0.9% -   50 ml\u0022,\u0022Volume\u0022:65.50,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:400.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1922",
+          "FirstName": "Fabrice",
+          "LastName": "GRELOT",
+          "BirthName": "GRELOT",
+          "DateOfBirth": "1947-10-08T22:00:00Z",
+          "Sex": 1
+        },
+        "Status": 8,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    },
+    {
+      "Preparation": {
+        "Id": 121898,
+        "ReferenceId": 121898,
+        "HeaderName": "H0011",
+        "PlannedAdministrationDate": "__CURRENTDATE__",
+        "UidNumber": "E0165C010ECC2658",
+        "IsStandAlone": false,
+        "MappingType": 81,
+        "Service": "CAN",
+        "AdministredService": null,
+        "ExpiryDate": "__EXPIRYDATE__",
+        "AdditionalFields": "{\u0022PrescriptionBookId\u0022:\u0022158772\u0022,\u0022Protocol\u0022:\u0022TAXOL CARBOPLATINE\u0022,\u0022ProtocolComment\u0022:\u0022AUC peut \u00EAtre comprise entre 4 et 6\u0022,\u0022DciLabel\u0022:\u0022PACLITAXEL\u0022,\u0022Dose\u0022:282.00,\u0022DoseUnit\u0022:\u0022mg\u0022,\u0022AdministrationDuration\u0022:3,\u0022AdministrationDurationUnit\u0022:\u0022H\u0022,\u0022AdministrationRouteCode\u0022:\u0022P\u003E1H\u0022,\u0022Emergency\u0022:false,\u0022Predecessor\u0022:null,\u0022InitialPreparationDate\u0022:\u0022__CURRENTDATE__\u0022,\u0022DayNumber\u0022:1,\u0022CycleNumber\u0022:2,\u0022Diluent\u0022:\u0022GLUCOSE 5% -  500 mL\u0022,\u0022Volume\u0022:547.00,\u0022VolumeUnit\u0022:\u0022ml\u0022,\u0022ProtocolDose\u0022:175.00,\u0022ProtocolDoseUnit\u0022:\u0022mg/m\u00B2\u0022,\u0022ProductComment\u0022:null,\u0022StorageTemperatureType\u0022:0}",
+        "Patient": {
+          "FileNumber": "1923",
+          "FirstName": "Nathalie",
+          "LastName": "TRUONG",
+          "BirthName": "TRUONG",
+          "DateOfBirth": "1939-12-04T23:00:00Z",
+          "Sex": 2
+        },
+        "Status": 8,
+        "CreationDate": "__CURRENTDATE__",
+        "PreControlIgnored": false,
+        "Receptions": [],
+        "HealthChecks": []
+      },
+      "AdministrationStartStep": null,
+      "AdministrationStateSteps": [],
+      "AdministrationEndStep": null
+    }
+  ],
+  "Packages": [
+    {
+      "PackageId": 21679,
+      "ContainerUid": null,
+      "Service": {
+        "Id": 3,
+        "Code": "CAN",
+        "Label": "H. de Jour"
+      },
+      "Contents": [
+        {
+          "Uid": "E0165C010ECC22C0",
+          "Status": 9
+        },
+        {
+          "Uid": "E0165C010ECC235E",
+          "Status": 9
+        },
+        {
+          "Uid": "E0165C010ECC23CE",
+          "Status": 9
+        },
+        {
+          "Uid": "E0165C010ECC22B0",
+          "Status": 9
+        },
+        {
+          "Uid": "E0165C010ECC249D",
+          "Status": 9
+        },
+        {
+          "Uid": "E0165C010ECC23FE",
+          "Status": 9
+        }
+      ],
+      "Status": 0
+    },
+    {
+      "PackageId": 21680,
+      "ContainerUid": null,
+      "Service": {
+        "Id": 3,
+        "Code": "CAN",
+        "Label": "H. de Jour"
+      },
+      "Contents": [
+        {
+          "Uid": "E0165C010ECC250B",
+          "Status": 7
+        },
+        {
+          "Uid": "E0165C0112782A71",
+          "Status": 7
+        },
+        {
+          "Uid": "E0165C011277E999",
+          "Status": 7
+        }
+      ],
+      "Status": 0
+    },
+    {
+      "PackageId": 21681,
+      "ContainerUid": null,
+      "Service": {
+        "Id": 3,
+        "Code": "CAN",
+        "Label": "H. de Jour"
+      },
+      "Contents": [
+        {
+          "Uid": "E0165C0112780912",
+          "Status": 9
+        }
+      ],
+      "Status": 0
+    },
+    {
+      "PackageId": 21682,
+      "ContainerUid": null,
+      "Service": {
+        "Id": 3,
+        "Code": "CAN",
+        "Label": "H. de Jour"
+      },
+      "Contents": [
+        {
+          "Uid": "E0165C0112788440",
+          "Status": 9
+        }
+      ],
+      "Status": 0
+    },
+    {
+      "PackageId": 21683,
+      "ContainerUid": null,
+      "Service": {
+        "Id": 3,
+        "Code": "CAN",
+        "Label": "H. de Jour"
+      },
+      "Contents": [
+        {
+          "Uid": "E0165C0112784E71",
+          "Status": 7
+        },
+        {
+          "Uid": "E0165C0112784B76",
+          "Status": 7
+        }
+      ],
+      "Status": 0
+    },
+    {
+      "PackageId": 21684,
+      "ContainerUid": null,
+      "Service": {
+        "Id": 3,
+        "Code": "CAN",
+        "Label": "H. de Jour"
+      },
+      "Contents": [
+        {
+          "Uid": "E0165C0112782A63",
+          "Status": 8
+        },
+        {
+          "Uid": "E0165C011278677D",
+          "Status": 8
+        },
+        {
+          "Uid": "E0165C0112786AE9",
+          "Status": 8
+        }
+      ],
+      "Status": 0
+    }
+  ],
+  "Notifications": [
+    {
+      "Id": 28086,
+      "Title": "XMatch-Package",
+      "Message": "Waiting for reception package",
+      "Type": "Package",
+      "Data": "{\u0022PackageId\u0022:21680,\u0022ContainerUid\u0022:null,\u0022Service\u0022:{\u0022Code\u0022:\u0022305\u0022,\u0022Label\u0022:\u0022H. de Jour\u0022,\u0022Id\u0022:3},\u0022Contents\u0022:[{\u0022Uid\u0022:\u0022E0165C010ECC250B\u0022,\u0022Status\u0022:7},{\u0022Uid\u0022:\u0022E0165C0112782A71\u0022,\u0022Status\u0022:7},{\u0022Uid\u0022:\u0022E0165C011277E999\u0022,\u0022Status\u0022:7}],\u0022Status\u0022:8}"
+    },
+    {
+      "Id": 28089,
+      "Title": "XMatch-Package",
+      "Message": "Waiting for reception package",
+      "Type": "Package",
+      "Data": "{\u0022PackageId\u0022:21683,\u0022ContainerUid\u0022:null,\u0022Service\u0022:{\u0022Code\u0022:\u0022305\u0022,\u0022Label\u0022:\u0022H. de Jour\u0022,\u0022Id\u0022:3},\u0022Contents\u0022:[{\u0022Uid\u0022:\u0022E0165C0112784E71\u0022,\u0022Status\u0022:7},{\u0022Uid\u0022:\u0022E0165C0112784B76\u0022,\u0022Status\u0022:7}],\u0022Status\u0022:8}"
+    },
+    {
+      "Id": 28090,
+      "Title": "XMatch-Package",
+      "Message": "Waiting for reception package",
+      "Type": "Package",
+      "Data": "{\u0022PackageId\u0022:21684,\u0022ContainerUid\u0022:null,\u0022Service\u0022:{\u0022Code\u0022:\u0022305\u0022,\u0022Label\u0022:\u0022H. de Jour\u0022,\u0022Id\u0022:3},\u0022Contents\u0022:[{\u0022Uid\u0022:\u0022E0165C0112782A63\u0022,\u0022Status\u0022:8},{\u0022Uid\u0022:\u0022E0165C011278677D\u0022,\u0022Status\u0022:8},{\u0022Uid\u0022:\u0022E0165C0112786AE9\u0022,\u0022Status\u0022:8}],\u0022Status\u0022:8}"
+    }
+  ]
+}
